@@ -1,0 +1,25 @@
+@import 'config';
+
+html {
+    color-scheme: dark light;
+    color: white;
+}
+
+body {
+    position: relative;
+    display: grid;
+    background-color: rgb(34, 34, 34);
+    width: 100vw;
+    min-height: 100vh;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(21, 1fr);
+
+
+}
+
+@import 'theBall';
+@import 'sphereControls';
+@import 'layersControls';
+@import 'layerColorControls';
+@import 'layerBorderControls';
+@import 'responsive';

@@ -1,0 +1,67 @@
+#layerBorderEditBtn {
+    position: absolute;
+    top: 4em;
+    right: 2em;
+    cursor: pointer;
+}
+#borderControlsContainer {
+    position: absolute;
+    // top: 2vw;
+    // left: 2vw;
+    // width: 80vw;
+    // height: fit-content;
+    grid-column: 2/11;
+    grid-row: 1/7;
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+}
+
+.borderControllersContainers {
+    position: relative;
+    background-color: rgba(21, 21, 21, .8);
+    width: 100%;
+    border: .2em solid black;
+}
+#xBorderControlsContainer {
+    display: grid;
+    grid-auto-rows: auto;
+    gap: .5em;
+    padding: 1em;
+    grid-column: 1/2;
+}
+#yBorderControlsContainer {
+    display: grid;
+    grid-auto-rows: auto;
+    gap: .5em;
+    padding: 1em;
+    grid-column: 2/3;
+}
+#zBorderControlsContainer {
+    display: grid;
+    grid-auto-rows: auto;
+    gap: .5em;
+    padding: 1em;
+    grid-column: 3/4;
+}
+.borderLabels {
+    width: 100%;
+    font-size: 1.5em;
+    color: rgba(233, 89, 233);
+    // background-color: rgba(233,233,233, .4);
+
+}
+.borderSelectors {
+    width: 100%;
+    // height: 3em;
+    padding: .5em;
+    font-size: 1em;
+    text-align: center;
+    color: rgb(233, 233, 233);
+    background-color: blue;
+}
+.borderRangeInputs {
+    width: 100%;
+
+}

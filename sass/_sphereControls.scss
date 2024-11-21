@@ -1,0 +1,77 @@
+#spherePlaneLayers {
+    position: absolute;
+    top: 3em;
+    left: 3em;
+    width: 60vw;
+}
+
+#spherePlaneLayersLabel {
+    position: absolute;
+    top: 1em;
+    left: 3em;
+    width: 60vw;
+    font-size: 1em;
+}
+
+#sphereRotationOnOffLabel {
+    position: absolute;
+    top: 5em;
+    left: 3em;
+    // width: 60vw;
+    font-size: 1em;
+    // color: blue;
+}
+#sphereRotationOnOff {
+    position: absolute;
+    top: 6.5em;
+    left: 3em;
+    // width: 6vw;
+    font-size: 1em;
+    // color: blue;
+}
+
+
+#sphereRotationSpeedLabel {
+    position: absolute;
+    top: 5em;
+    left: 8em;
+    // width: 15vw;
+    font-size: 1em;
+}
+
+#sphereRotationSpeed {
+    position: absolute;
+    top: 8em;
+    left: 9.5em;
+    width: 20vw;
+}
+
+#sphereRotationDirectionLabel {
+    position: absolute;
+    top: 5em;
+    left: 19em;
+    // width: 15vw;
+    font-size: 1em;
+}
+
+#sphereRotationDirection {
+    position: absolute;
+    top: 8em;
+    left: 23em;
+    width: 15vw;
+}
+
+#sphereEditBtn {
+    position: absolute;
+    top: 0em;
+    right: 2em;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#sphereControlsContainer {
+    background-color: rgba(233, 233, 233, .5);
+    width: 50vw;
+    height: fit-content;
+    z-index: 1;
+}

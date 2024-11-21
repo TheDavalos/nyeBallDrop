@@ -1,0 +1,23 @@
+@media (width > 500px) and (height > 600px) {
+    #scene {
+        scale: .9;
+    }
+}
+
+@media (width > 700px) and (height > 900px) {
+    #scene {
+        scale: 1.3;
+    }
+}
+
+@media (width > 1000px) and (height > 1300px) {
+    #scene {
+        scale: 2;
+    }
+}
+
+@media (width > 1300px) and (height > 1500px) {
+    #scene {
+        scale: 2.3;
+    }
+}

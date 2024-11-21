@@ -1,0 +1,84 @@
+#nyeBallDropContainer {
+    // position: absolute;
+    // bottom: 2vh;
+    // left: 2vw;
+    // width: 80vw;
+    // min-height: 70vh;
+    grid-column: 2/13;
+    grid-row: 7/21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    // background:
+    // linear-gradient(rgba(0, 0, 144, .4), rgba(144, 144, 144, .5) 15% 48%, rgba(5, 5, 5, .7) 55%, transparent, rgba(233, 233, 233, .2)),
+    //     conic-gradient(
+    //         white 0deg 83deg,
+
+    //         black 92deg 100deg,
+    //         rgb(13, 13, 13) 100deg 102deg,
+    //         black 102deg 108deg,
+    //         rgb(13, 13, 13) 108deg 115deg,
+    //         black 115deg 125deg,
+    //         rgb(13, 13, 13) 125deg 140deg,
+
+    //         black 140deg 160deg,
+    //         rgb(13, 13, 13) 160deg 200deg,
+    //         black 200deg 220deg,
+
+    //         rgb(13, 13, 13) 220deg 235deg,
+    //         black 235deg 245deg,
+    //         rgb(13, 13, 13) 245deg 252deg,
+    //         black 252deg 258deg,
+    //         rgb(13, 13, 13) 258deg 260deg,
+    //         black 260deg 268deg,
+
+    //         white 277deg 360deg
+    //     );
+        
+        background: radial-gradient(transparent 63%, black);
+    // background: linear-gradient(white 13%, black 63%, rgb(120, 120, 120) 90%);
+    // background-position-y: 70vh;
+    // background-size: 180%;
+    border: 1em solid rgb(13, 13, 13);
+    border-radius: 1em;
+    z-index: -1;
+}
+
+#scene {
+    position: absolute;
+    // top: 0em;
+    bottom: 10vh;
+    perspective: 34em;
+    transform-style: preserve-3d;
+    // margin-top: 5em;
+    scale: .8;
+    //     animation: moveScene 1s alternate infinite ease-out;
+    // }
+    // @keyframes moveScene {
+    // 0% {transform: translateY(70vh);}
+    // 100% {transform: translateY(35vh);}
+}
+
+#ball1 {
+    position: absolute;
+
+    transform-style: preserve-3d;
+}
+
+@keyframes moveBall1 {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.layers {
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 20em;
+    height: 20em;
+}

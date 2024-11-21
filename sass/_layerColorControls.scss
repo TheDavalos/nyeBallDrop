@@ -1,0 +1,41 @@
+#layerColorEditBtn {
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    cursor: pointer;
+}
+
+#xColorControlsContainer {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    background-color: rgba(233, 233, 233, .5);
+}
+
+#yColorControlsContainer {
+    position: absolute;
+    top: 1em;
+    left: 11em;
+    background-color: rgba(233, 233, 233, .5);
+}
+
+#zColorControlsContainer {
+    position: absolute;
+    top: 1em;
+    left: 21em;
+    background-color: rgba(233, 233, 233, .5);
+}
+
+#colorControlsContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80vw;
+    height: fit-content;
+    font-size: 2.8vw;
+    color: white;
+}
+
+.colorControllers {
+    width: 100%;
+}

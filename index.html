@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang=”en”>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="images/GFDavaloNoBg235x385.png" media="(prefers-color-scheme: light)">
+	<link rel="icon" href="images/babyJesus.jpg" media="(prefers-color-scheme: dark)">
+	<link rel="stylesheet" href="src/style.css" />
+	<script defer src="script.js"></script>
+	<title>New Year's Eve Ball Drop</title>
+</head>
+
+<body id="body">
+	<button id="sphereEditBtn">Edit Sphere</button>
+	<div id="sphereControlsContainer">
+		<div id="spherePlaneLayersLabel"></div>
+		<input id="spherePlaneLayers" name="spherePlaneLayers" type="range" min="3" max="24">
+
+		<div id="sphereRotationOnOffLabel">Rotation</div>
+		<select id="sphereRotationOnOff">
+			<option value="on">On</option>
+			<option value="off">Off</option>
+		</select>
+		<div id="sphereRotationSpeedLabel"></div>
+		<input id="sphereRotationSpeed" type="range" min=".5" max="60" value="0">
+		<div id="sphereRotationDirectionLabel">Rotation Direction</div>
+		<select id="sphereRotationDirection">
+			<option value="reverse">Left</option>
+			<option value="">Right</option>
+		</select>
+	</div>
+
+	<button id="layersEditBtn">Edit Layers</button>
+	<div id="layersControlsContainer">
+		<div id="planeXLayersEditLabel">X Layers</div>
+		<select id="planeXLayersShape" class="shapeControllers">
+			<option>Select a Shape</option>
+			<option value="circle">Circle</option>
+			<option value="square">Square</option>
+			<option value="triangle">Triangle</option>
+			<option value="octagon">Octagon</option>
+		</select>
+		<p id="animateXOnOffLabel">Layer Animation</p>
+		<select id="animateXOnOff">
+			<option value="play">On</option>
+			<option value="pause">Off</option>
+		</select>
+		<p id="xEvenRotationOnOffLabel">Even Layers Direction</p>
+		<select id="xEvenRotationOnOff">
+			<option value="1">Left</option>
+			<option value="-1">Right</option>
+		</select>
+		<p id="xOddRotationOnOffLabel">Odd Layers Direction</p>
+		<select id="xOddRotationOnOff">
+			<option value="-1">Right</option>
+			<option value="1">Left</option>
+		</select>
+		<div id="animationXSpeedLabel"></div>
+		<input id="animationXSpeed" type="range" min="10" max="570000" value="300000">
+
+		<div id="planeYLayersEditLabel">Y Layers</div>
+		<select id="planeYLayersShape" class="shapeControllers">
+			<option>Select a Shape</option>
+			<option value="circle">Circle</option>
+			<option value="square">Square</option>
+			<option value="triangle">Triangle</option>
+			<option value="octagon">Octagon</option>
+		</select>
+		<p id="animateYOnOffLabel">Layer Animation</p>
+		<select id="animateYOnOff">
+			<option value="play">On</option>
+			<option value="pause">Off</option>
+		</select>
+		<p id="yEvenRotationOnOffLabel">Even Layers Direction</p>
+		<select id="yEvenRotationOnOff">
+			<option value="1">Up</option>
+			<option value="-1">Down</option>
+		</select>
+		<p id="yOddRotationOnOffLabel">Odd Layers Direction</p>
+		<select id="yOddRotationOnOff">
+			<option value="-1">Down</option>
+			<option value="1">Up</option>
+		</select>
+		<div id="animationYSpeedLabel"></div>
+		<input id="animationYSpeed" type="range" min="10" max="570000" value="300000">
+
+		<div id="planeZLayersEditLabel">Z Layers</div>
+		<select id="planeZLayersShape" class="shapeControllers">
+			<option>Select a Shape</option>
+			<option value="circle">Circle</option>
+			<option value="square">Square</option>
+			<option value="triangle">Triangle</option>
+			<option value="octagon">Octagon</option>
+		</select>
+		<p id="animateZOnOffLabel">Layer Animation</p>
+		<select id="animateZOnOff">
+			<option value="play">On</option>
+			<option value="pause">Off</option>
+		</select>
+		<p id="zEvenRotationOnOffLabel">Even Layers Direction</p>
+		<select id="zEvenRotationOnOff">
+			<option value="1">Left</option>
+			<option value="-1">Right</option>
+		</select>
+		<p id="zOddRotationOnOffLabel">Odd Layers Direction</p>
+		<select id="zOddRotationOnOff">
+			<option value="-1">Right</option>
+			<option value="1">Left</option>
+		</select>
+		<div id="animationZSpeedLabel"></div>
+		<input id="animationZSpeed" type="range" min="10" max="570000" value="300000">
+	</div>
+
+	<button id="layerColorEditBtn">Edit Layer Colors</button>
+	<div id="colorControlsContainer">
+		<div id="xColorControlsContainer">
+			<div id="planeXColorRLabel"></div>
+			<input id="planeXColorR" class="colorControllers" name="planeXColorR" type="range" min="0" max="255"
+				value="255">
+			<div id="planeXColorGLabel"></div>
+			<input id="planeXColorG" class="colorControllers" name="planeXColorG" type="range" min="0" max="255"
+				value="0">
+			<div id="planeXColorBLabel"></div>
+			<input id="planeXColorB" class="colorControllers" name="planeXColorB" type="range" min="0" max="255"
+				value="0">
+			<div id="planeXColorOLabel"></div>
+			<input id="planeXColorO" class="colorControllers" name="planeXColorO" type="range" min="0" max="100"
+				value="100">
+		</div>
+
+		<div id="yColorControlsContainer">
+			<div id="planeYColorRLabel"></div>
+			<input id="planeYColorR" class="colorControllers" name="planeYColorR" type="range" min="0" max="255"
+				value="255">
+			<div id="planeYColorGLabel"></div>
+			<input id="planeYColorG" class="colorControllers" name="planeYColorG" type="range" min="0" max="255"
+				value="255">
+			<div id="planeYColorBLabel"></div>
+			<input id="planeYColorB" class="colorControllers" name="planeYColorB" type="range" min="0" max="255"
+				value="255">
+			<div id="planeYColorOLabel"></div>
+			<input id="planeYColorO" class="colorControllers" name="planeYColorO" type="range" min="0" max="100"
+				value="100">
+		</div>
+
+		<div id="zColorControlsContainer">
+			<div id="planeZColorRLabel"></div>
+			<input id="planeZColorR" class="colorControllers" name="planeZColorR" type="range" min="0" max="255"
+				value="0">
+			<div id="planeZColorGLabel"></div>
+			<input id="planeZColorG" class="colorControllers" name="planeZColorG" type="range" min="0" max="255"
+				value="0">
+			<div id="planeZColorBLabel"></div>
+			<input id="planeZColorB" class="colorControllers" name="planeZColorB" type="range" min="0" max="255"
+				value="255">
+			<div id="planeZColorOLabel"></div>
+			<input id="planeZColorO" class="colorControllers" name="planeZColorO" type="range" min="0" max="100"
+				value="100">
+		</div>
+	</div>
+
+	<button id="layerBorderEditBtn">Edit Layer Borders</button>
+	<div id="borderControlsContainer">
+		<div id="xBorderControlsContainer" class="borderControllersContainers">
+			<div class="borderLabels" id="planeXBorderSizeLabel"></div>
+			<input class="borderRangeInputs" id="planeXBorderSize" name="planeXBorderSize" type="range" min="0" max="50">
+			<div class="borderLabels" id="planeXBorderStyleLabel">Select a Style</div>
+			<select class="borderSelectors" id="planeXBorderStyle">
+				<option value="none">No Sphere Frames</option>
+				<option value="solid">Single Sphere Frames</option>
+				<option value="double">Double Sphere Frames</option>
+				<option value="dotted">Rotating Lights</option>
+				<option value="dashed">Rotating Light Strips</option>
+			</select>
+			<div class="borderLabels" id="planeXBorderRLabel"></div>
+			<input class="borderRangeInputs" id="planeXBorderR" name="planeXBorderR" type="range" min="0" max="255" value="255">
+			<div class="borderLabels" id="planeXBorderGLabel"></div>
+			<input class="borderRangeInputs" id="planeXBorderG" name="planeXBorderG" type="range" min="0" max="255" value="0">
+			<div class="borderLabels" id="planeXBorderBLabel"></div>
+			<input class="borderRangeInputs" id="planeXBorderB" name="planeXBorderB" type="range" min="0" max="255" value="0">
+			<div class="borderLabels" id="planeXBorderOLabel"></div>
+			<input class="borderRangeInputs" id="planeXBorderO" name="planeXBorderO" type="range" min="0" max="100" value="100">
+		</div>
+
+		<div id="yBorderControlsContainer" class="borderControllersContainers">
+			<div class="borderLabels" id="planeYBorderSizeLabel"></div>
+			<input class="borderRangeInputs" id="planeYBorderSize" name="planeYBorderSize" type="range" min="0" max="50">
+			<div class="borderLabels" id="planeYBorderStyleLabel">Select a Style</div>
+			<select class="borderSelectors" id="planeYBorderStyle">
+				<option value="none">No Sphere Frames</option>
+				<option value="solid">Single Sphere Frames</option>
+				<option value="double">Double Sphere Frames</option>
+				<option value="dotted">Rotating Lights</option>
+				<option value="dashed">Rotating Light Strips</option>
+			</select>
+			<div class="borderLabels" id="planeYBorderRLabel"></div>
+			<input class="borderRangeInputs" id="planeYBorderR" name="planeYBorderR" type="range" min="0" max="255" value="255">
+			<div class="borderLabels" id="planeYBorderGLabel"></div>
+			<input class="borderRangeInputs" id="planeYBorderG" name="planeYBorderG" type="range" min="0" max="255" value="255">
+			<div class="borderLabels" id="planeYBorderBLabel"></div>
+			<input class="borderRangeInputs" id="planeYBorderB" name="planeYBorderB" type="range" min="0" max="255" value="255">
+			<div class="borderLabels" id="planeYBorderOLabel"></div>
+			<input class="borderRangeInputs" id="planeYBorderO" name="planeYBorderO" type="range" min="0" max="100" value="100">
+		</div>
+
+		<div id="zBorderControlsContainer" class="borderControllersContainers">
+			<div class="borderLabels" id="planeZBorderSizeLabel"></div>
+			<input class="borderRangeInputs" id="planeZBorderSize" name="planeZBorderSize" type="range" min="0" max="50">
+			<div class="borderLabels" id="planeZBorderStyleLabel">Select a Style</div>
+			<select class="borderSelectors" id="planeZBorderStyle">
+				<option value="none">No Sphere Frames</option>
+				<option value="solid">Single Sphere Frames</option>
+				<option value="double">Double Sphere Frames</option>
+				<option value="dotted">Rotating Lights</option>
+				<option value="dashed">Rotating Light Strips</option>
+			</select>
+			<div class="borderLabels" id="planeZBorderRLabel"></div>
+			<input class="borderRangeInputs" id="planeZBorderR" name="planeZBorderR" type="range" min="0" max="255" value="0">
+			<div class="borderLabels" id="planeZBorderGLabel"></div>
+			<input class="borderRangeInputs" id="planeZBorderG" name="planeZBorderG" type="range" min="0" max="255" value="0">
+			<div class="borderLabels" id="planeZBorderBLabel"></div>
+			<input class="borderRangeInputs" id="planeZBorderB" name="planeZBorderB" type="range" min="0" max="255" value="255">
+			<div class="borderLabels" id="planeZBorderOLabel"></div>
+			<input class="borderRangeInputs" id="planeZBorderO" name="planeZBorderO" type="range" min="0" max="100" value="100">
+		</div>
+
+	</div>
+	<div id="nyeBallDropContainer">
+		<div id="scene">
+			<div id="ball1"></div>
+		</div>
+	</div>
+</body>
+
+</html>
