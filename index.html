@@ -23,11 +23,11 @@
 
 		<div id="sphereRotationOnOffLabel">Rotation</div>
 		<select id="sphereRotationOnOff">
-			<option value="on">On</option>
-			<option value="off">Off</option>
+			<option id="sphereRotationOn" value="on">On</option>
+			<option id="sphereRotationOff" value="off">Off</option>
 		</select>
 		<div id="sphereRotationSpeedLabel"></div>
-		<input id="sphereRotationSpeed" type="range" min=".5" max="60" value="0">
+		<input id="sphereRotationSpeed" type="range" min=".5" max="60">
 		<div id="sphereRotationDirectionLabel">Rotation Direction</div>
 		<select id="sphereRotationDirection">
 			<option value="reverse">Left</option>
@@ -120,47 +120,35 @@
 	<div id="colorControlsContainer">
 		<div id="xColorControlsContainer">
 			<div id="planeXColorRLabel"></div>
-			<input id="planeXColorR" class="colorControllers" name="planeXColorR" type="range" min="0" max="255"
-				value="255">
+			<input id="planeXColorR" class="colorControllers" name="planeXColorR" type="range" min="0" max="255">
 			<div id="planeXColorGLabel"></div>
-			<input id="planeXColorG" class="colorControllers" name="planeXColorG" type="range" min="0" max="255"
-				value="0">
+			<input id="planeXColorG" class="colorControllers" name="planeXColorG" type="range" min="0" max="255">
 			<div id="planeXColorBLabel"></div>
-			<input id="planeXColorB" class="colorControllers" name="planeXColorB" type="range" min="0" max="255"
-				value="0">
+			<input id="planeXColorB" class="colorControllers" name="planeXColorB" type="range" min="0" max="255">
 			<div id="planeXColorOLabel"></div>
-			<input id="planeXColorO" class="colorControllers" name="planeXColorO" type="range" min="0" max="100"
-				value="100">
+			<input id="planeXColorO" class="colorControllers" name="planeXColorO" type="range" min="0" max="100">
 		</div>
 
 		<div id="yColorControlsContainer">
 			<div id="planeYColorRLabel"></div>
-			<input id="planeYColorR" class="colorControllers" name="planeYColorR" type="range" min="0" max="255"
-				value="255">
+			<input id="planeYColorR" class="colorControllers" name="planeYColorR" type="range" min="0" max="255">
 			<div id="planeYColorGLabel"></div>
-			<input id="planeYColorG" class="colorControllers" name="planeYColorG" type="range" min="0" max="255"
-				value="255">
+			<input id="planeYColorG" class="colorControllers" name="planeYColorG" type="range" min="0" max="255">
 			<div id="planeYColorBLabel"></div>
-			<input id="planeYColorB" class="colorControllers" name="planeYColorB" type="range" min="0" max="255"
-				value="255">
+			<input id="planeYColorB" class="colorControllers" name="planeYColorB" type="range" min="0" max="255">
 			<div id="planeYColorOLabel"></div>
-			<input id="planeYColorO" class="colorControllers" name="planeYColorO" type="range" min="0" max="100"
-				value="100">
+			<input id="planeYColorO" class="colorControllers" name="planeYColorO" type="range" min="0" max="100">
 		</div>
 
 		<div id="zColorControlsContainer">
 			<div id="planeZColorRLabel"></div>
-			<input id="planeZColorR" class="colorControllers" name="planeZColorR" type="range" min="0" max="255"
-				value="0">
+			<input id="planeZColorR" class="colorControllers" name="planeZColorR" type="range" min="0" max="255">
 			<div id="planeZColorGLabel"></div>
-			<input id="planeZColorG" class="colorControllers" name="planeZColorG" type="range" min="0" max="255"
-				value="0">
+			<input id="planeZColorG" class="colorControllers" name="planeZColorG" type="range" min="0" max="255">
 			<div id="planeZColorBLabel"></div>
-			<input id="planeZColorB" class="colorControllers" name="planeZColorB" type="range" min="0" max="255"
-				value="255">
+			<input id="planeZColorB" class="colorControllers" name="planeZColorB" type="range" min="0" max="255">
 			<div id="planeZColorOLabel"></div>
-			<input id="planeZColorO" class="colorControllers" name="planeZColorO" type="range" min="0" max="100"
-				value="100">
+			<input id="planeZColorO" class="colorControllers" name="planeZColorO" type="range" min="0" max="100">
 		</div>
 	</div>
 
@@ -178,13 +166,13 @@
 				<option value="dashed">Rotating Light Strips</option>
 			</select>
 			<div class="borderLabels" id="planeXBorderRLabel"></div>
-			<input class="borderRangeInputs" id="planeXBorderR" name="planeXBorderR" type="range" min="0" max="255" value="255">
+			<input class="borderRangeInputs" id="planeXBorderR" name="planeXBorderR" type="range" min="0" max="255">
 			<div class="borderLabels" id="planeXBorderGLabel"></div>
-			<input class="borderRangeInputs" id="planeXBorderG" name="planeXBorderG" type="range" min="0" max="255" value="0">
+			<input class="borderRangeInputs" id="planeXBorderG" name="planeXBorderG" type="range" min="0" max="255">
 			<div class="borderLabels" id="planeXBorderBLabel"></div>
-			<input class="borderRangeInputs" id="planeXBorderB" name="planeXBorderB" type="range" min="0" max="255" value="0">
+			<input class="borderRangeInputs" id="planeXBorderB" name="planeXBorderB" type="range" min="0" max="255">
 			<div class="borderLabels" id="planeXBorderOLabel"></div>
-			<input class="borderRangeInputs" id="planeXBorderO" name="planeXBorderO" type="range" min="0" max="100" value="100">
+			<input class="borderRangeInputs" id="planeXBorderO" name="planeXBorderO" type="range" min="0" max="100">
 		</div>
 
 		<div id="yBorderControlsContainer" class="borderControllersContainers">
@@ -199,13 +187,13 @@
 				<option value="dashed">Rotating Light Strips</option>
 			</select>
 			<div class="borderLabels" id="planeYBorderRLabel"></div>
-			<input class="borderRangeInputs" id="planeYBorderR" name="planeYBorderR" type="range" min="0" max="255" value="255">
+			<input class="borderRangeInputs" id="planeYBorderR" name="planeYBorderR" type="range" min="0" max="255">
 			<div class="borderLabels" id="planeYBorderGLabel"></div>
-			<input class="borderRangeInputs" id="planeYBorderG" name="planeYBorderG" type="range" min="0" max="255" value="255">
+			<input class="borderRangeInputs" id="planeYBorderG" name="planeYBorderG" type="range" min="0" max="255">
 			<div class="borderLabels" id="planeYBorderBLabel"></div>
-			<input class="borderRangeInputs" id="planeYBorderB" name="planeYBorderB" type="range" min="0" max="255" value="255">
+			<input class="borderRangeInputs" id="planeYBorderB" name="planeYBorderB" type="range" min="0" max="255">
 			<div class="borderLabels" id="planeYBorderOLabel"></div>
-			<input class="borderRangeInputs" id="planeYBorderO" name="planeYBorderO" type="range" min="0" max="100" value="100">
+			<input class="borderRangeInputs" id="planeYBorderO" name="planeYBorderO" type="range" min="0" max="100">
 		</div>
 
 		<div id="zBorderControlsContainer" class="borderControllersContainers">
@@ -220,13 +208,13 @@
 				<option value="dashed">Rotating Light Strips</option>
 			</select>
 			<div class="borderLabels" id="planeZBorderRLabel"></div>
-			<input class="borderRangeInputs" id="planeZBorderR" name="planeZBorderR" type="range" min="0" max="255" value="0">
+			<input class="borderRangeInputs" id="planeZBorderR" name="planeZBorderR" type="range" min="0" max="255">
 			<div class="borderLabels" id="planeZBorderGLabel"></div>
-			<input class="borderRangeInputs" id="planeZBorderG" name="planeZBorderG" type="range" min="0" max="255" value="0">
+			<input class="borderRangeInputs" id="planeZBorderG" name="planeZBorderG" type="range" min="0" max="255">
 			<div class="borderLabels" id="planeZBorderBLabel"></div>
-			<input class="borderRangeInputs" id="planeZBorderB" name="planeZBorderB" type="range" min="0" max="255" value="255">
+			<input class="borderRangeInputs" id="planeZBorderB" name="planeZBorderB" type="range" min="0" max="255">
 			<div class="borderLabels" id="planeZBorderOLabel"></div>
-			<input class="borderRangeInputs" id="planeZBorderO" name="planeZBorderO" type="range" min="0" max="100" value="100">
+			<input class="borderRangeInputs" id="planeZBorderO" name="planeZBorderO" type="range" min="0" max="100">
 		</div>
 
 	</div>
